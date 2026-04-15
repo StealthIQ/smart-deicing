@@ -13,7 +13,8 @@ CLI-first starter for a beginner-friendly Arduino Uno de-icing demo using an LM3
 
 - The reusable controller scaffold is present.
 - `src/main.cpp` is a host-only harness for laptop-side logic checks.
-- No installation, build, upload, or simulation has been performed in this session.
+- No installation, board upload, or simulation has been performed in this session.
+- The host-side harness and controller test were compiled and run successfully in this session.
 
 ## Project layout
 

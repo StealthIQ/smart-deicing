@@ -17,6 +17,7 @@ test_controller
 .piolibdeps/
 
 # Arduino / simulator outputs
+.arduino15/
 wokwi-private.toml
 simulator.log
 

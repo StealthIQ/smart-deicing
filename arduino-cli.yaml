@@ -4,7 +4,7 @@ board_manager:
 directories:
   data: ./.arduino15
   downloads: ./.arduino15/staging
-  user: ./arduino
+  user: ./.arduino15/user
 
 library:
   enable_unsafe_install: false

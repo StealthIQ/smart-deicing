@@ -1,4 +1,4 @@
-#include "../include/controller.h"
+#include "controller.h"
 
 namespace {
 constexpr int kSensorPin = A0;

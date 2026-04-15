@@ -10,14 +10,7 @@ Goal: confirm the LED wiring is correct before involving the sensor.
 - Confirm the LED on `D8` turns on and off.
 - If the LED does not blink, recheck the LED polarity and resistor path to `GND`.
 
-Deferred command idea:
-
-```bash
-arduino-cli compile --fqbn arduino:avr:uno arduino
-arduino-cli upload -p /dev/ttyACM0 --fqbn arduino:avr:uno arduino
-```
-
-Expected outcome later: the LED responds when the runtime output changes.
+Expected outcome later: the LED blinks with the temporary blink sketch used for this wiring-only check.
 
 ## Stage 2: Sensor-reading check
 
@@ -54,6 +47,15 @@ pio run
 ```
 
 Expected outcome later: the project builds from the `arduino/` folder without trying to treat `src/main.cpp` as AVR firmware.
+
+Arduino CLI command path for the real de-icing runtime:
+
+```bash
+arduino-cli compile --fqbn arduino:avr:uno arduino
+arduino-cli upload -p /dev/ttyACM0 --fqbn arduino:avr:uno arduino
+```
+
+Expected outcome later: the deployed de-icing runtime reads temperature and drives the LED on `D8` based on the threshold.
 
 ## Troubleshooting
 

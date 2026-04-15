@@ -47,7 +47,7 @@ smart-deicing/
 
 - `src/main.cpp` is the host-only harness for laptop-side logic checks.
 - `arduino/arduino.ino` is the compile-ready Arduino sketch for the Uno + LM35 + LED demo.
-- `arduino/main.ino` is kept as the originally requested scaffold file and points to the compile-ready sketch.
+- `arduino/main.ino` is kept only as the originally requested scaffold file and compatibility note.
 - `arduino/controller.h` lets the Arduino build include the shared controller cleanly from the sketch folder.
 - `arduino-cli.yaml` prepares a future Arduino CLI workflow without making installation mandatory now.
 - `platformio.ini` is optional and points PlatformIO at the `arduino/` folder so it does not try to build the host harness as AVR firmware.

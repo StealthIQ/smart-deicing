@@ -54,7 +54,21 @@ smart-deicing/
 - `docs/how-it-works.md` explains the sensor, controller, and LED flow in beginner-friendly terms.
 - `docs/uploading.md` outlines the future upload path once tools are installed.
 - `docs/testing.md` lists the staged checks for LED wiring, sensor reading, and threshold behavior.
+- `docs/install-later.md` lists the required and optional tools to install later.
+
+## What is ready now
+
+- The reusable controller scaffold exists.
+- The Arduino runtime entry and project config files exist.
+- The wiring, explanation, upload, and testing docs exist.
+- The repository is structured so the project can be finished later without redesign.
+
+## What to install later
+
+- Arduino CLI for the required command-line upload workflow.
+- PlatformIO Core only if you want the optional PlatformIO path.
+- Wokwi only if you want optional simulation later.
 
 ## Deferred installs
 
-Tool installation is intentionally deferred. A later document will list what to install for Arch Linux and optional tooling.
+Tool installation is intentionally deferred. See `docs/install-later.md` for the later install list and troubleshooting notes.

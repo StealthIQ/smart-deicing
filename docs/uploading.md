@@ -32,7 +32,7 @@ The compile-ready sketch file is `arduino/arduino.ino`, which matches the sketch
 
 ## Troubleshooting note
 
-If upload fails because of serial permissions, see the serial-permission troubleshooting notes that will be documented in `docs/install-later.md`.
+If upload fails because of serial permissions, see the serial-permission troubleshooting notes in `docs/install-later.md`.
 
 If compile fails, the usual first checks are:
 

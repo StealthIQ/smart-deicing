@@ -24,6 +24,13 @@ smart-deicing/
 │   ├── arduino.ino
 │   ├── controller.h
 │   └── main.ino
+├── arduino-cli.yaml
+├── docs/
+│   ├── how-it-works.md
+│   ├── install-later.md
+│   ├── testing.md
+│   ├── uploading.md
+│   └── wiring.md
 ├── include/
 │   └── controller.h
 ├── diagram.json

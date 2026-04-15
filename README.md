@@ -48,6 +48,13 @@ smart-deicing/
 - `platformio.ini` is optional and points PlatformIO at the `arduino/` folder so it does not try to build the host harness as AVR firmware.
 - `wokwi.toml` and `diagram.json` prepare a future simulation path for the same circuit.
 
+## Documentation
+
+- `docs/wiring.md` explains what connects to what.
+- `docs/how-it-works.md` explains the sensor, controller, and LED flow in beginner-friendly terms.
+- `docs/uploading.md` outlines the future upload path once tools are installed.
+- `docs/testing.md` lists the staged checks for LED wiring, sensor reading, and threshold behavior.
+
 ## Deferred installs
 
 Tool installation is intentionally deferred. A later document will list what to install for Arch Linux and optional tooling.

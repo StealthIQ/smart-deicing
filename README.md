@@ -19,13 +19,18 @@ CLI-first starter for a beginner-friendly Arduino Uno de-icing demo using an LM3
 
 ```text
 smart-deicing/
+├── arduino/
+│   └── main.ino
 ├── include/
 │   └── controller.h
+├── diagram.json
+├── platformio.ini
 ├── src/
 │   ├── controller.cpp
 │   └── main.cpp
 ├── test/
 │   └── test_controller.cpp
+├── wokwi.toml
 └── README.md
 ```
 
@@ -34,6 +39,14 @@ smart-deicing/
 1. Write and review the control logic first.
 2. Keep Arduino-specific pin reads and writes out of the reusable controller module.
 3. Add hardware/runtime files later in dedicated follow-up tasks.
+
+## Tooling roles
+
+- `src/main.cpp` is the host-only harness for laptop-side logic checks.
+- `arduino/main.ino` is the Arduino runtime entry for the Uno + LM35 + LED demo.
+- `arduino-cli.yaml` prepares a future Arduino CLI workflow without making installation mandatory now.
+- `platformio.ini` is optional and points PlatformIO at the `arduino/` folder so it does not try to build the host harness as AVR firmware.
+- `wokwi.toml` and `diagram.json` prepare a future simulation path for the same circuit.
 
 ## Deferred installs
 

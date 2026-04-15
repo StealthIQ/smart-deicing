@@ -1,0 +1,16 @@
+board_manager:
+  additional_urls: []
+
+directories:
+  data: ./.arduino15
+  downloads: ./.arduino15/staging
+  user: ./arduino
+
+library:
+  enable_unsafe_install: false
+
+logging:
+  level: info
+
+sketch:
+  always_export_binaries: true

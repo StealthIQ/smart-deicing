@@ -22,6 +22,8 @@ arduino-cli upload -p /dev/ttyACM0 --fqbn arduino:avr:uno arduino
 arduino-cli monitor -p /dev/ttyACM0 -c baudrate=9600
 ```
 
+The compile-ready sketch file is `arduino/arduino.ino`, which matches the sketch folder name used by the CLI command above.
+
 ## Expected runtime behavior
 
 - The Arduino reads the LM35 on `A0`.

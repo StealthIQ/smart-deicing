@@ -3,6 +3,8 @@
 *.obj
 *.out
 *.exe
+deicing_test
+test_controller
 
 # Embedded artifacts
 *.elf
@@ -24,3 +26,5 @@ Thumbs.db
 *.swp
 *.swo
 *~
+.hive/
+.sisyphus/

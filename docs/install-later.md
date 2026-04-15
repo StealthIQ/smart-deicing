@@ -14,6 +14,13 @@ For Arch Linux, install later:
 sudo pacman -S arduino-cli
 ```
 
+After installing Arduino CLI, install the Arduino Uno board core later with:
+
+```bash
+arduino-cli --config-file arduino-cli.yaml core update-index
+arduino-cli --config-file arduino-cli.yaml core install arduino:avr
+```
+
 ## Optional
 
 ### PlatformIO Core

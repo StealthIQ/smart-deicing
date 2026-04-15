@@ -16,10 +16,10 @@ This repository does not assume the Arduino tools are installed yet. These are t
 These commands are examples for later use after installation:
 
 ```bash
-arduino-cli board list
-arduino-cli compile --fqbn arduino:avr:uno arduino
-arduino-cli upload -p /dev/ttyACM0 --fqbn arduino:avr:uno arduino
-arduino-cli monitor -p /dev/ttyACM0 -c baudrate=9600
+arduino-cli --config-file arduino-cli.yaml board list
+arduino-cli --config-file arduino-cli.yaml compile --fqbn arduino:avr:uno arduino
+arduino-cli --config-file arduino-cli.yaml upload -p /dev/ttyACM0 --fqbn arduino:avr:uno arduino
+arduino-cli --config-file arduino-cli.yaml monitor -p /dev/ttyACM0 -c baudrate=9600
 ```
 
 The compile-ready sketch file is `arduino/arduino.ino`, which matches the sketch folder name used by the CLI command above.
@@ -39,3 +39,4 @@ If compile fails, the usual first checks are:
 - missing Arduino Uno core
 - wrong board name or FQBN
 - wrong serial port
+- wrong or missing `--config-file arduino-cli.yaml` when using the repo-local CLI config

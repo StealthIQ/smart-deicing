@@ -78,6 +78,7 @@ smart-deicing/
 ## What to install later
 
 - Arduino CLI for the required command-line upload workflow.
+- Arduino AVR core via Arduino CLI for Uno compilation and upload.
 - PlatformIO Core only if you want the optional PlatformIO path.
 - Wokwi only if you want optional simulation later.
 

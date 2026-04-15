@@ -26,7 +26,7 @@ Deferred command ideas:
 ```bash
 g++ -std=c++17 -Iinclude src/main.cpp src/controller.cpp -o deicing_test
 ./deicing_test
-arduino-cli monitor -p /dev/ttyACM0 -c baudrate=9600
+arduino-cli --config-file arduino-cli.yaml monitor -p /dev/ttyACM0 -c baudrate=9600
 ```
 
 Expected outcome later: the host harness prints heater `ON/OFF` transitions, and the board monitor prints temperature plus heater state.
@@ -51,8 +51,8 @@ Expected outcome later: the project builds from the `arduino/` folder without tr
 Arduino CLI command path for the real de-icing runtime:
 
 ```bash
-arduino-cli compile --fqbn arduino:avr:uno arduino
-arduino-cli upload -p /dev/ttyACM0 --fqbn arduino:avr:uno arduino
+arduino-cli --config-file arduino-cli.yaml compile --fqbn arduino:avr:uno arduino
+arduino-cli --config-file arduino-cli.yaml upload -p /dev/ttyACM0 --fqbn arduino:avr:uno arduino
 ```
 
 Expected outcome later: the deployed de-icing runtime reads temperature and drives the LED on `D8` based on the threshold.

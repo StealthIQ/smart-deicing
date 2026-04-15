@@ -1,0 +1,26 @@
+# C++ build artifacts
+*.o
+*.obj
+*.out
+*.exe
+
+# Embedded artifacts
+*.elf
+*.hex
+*.bin
+*.map
+
+# PlatformIO
+.pio/
+.piolibdeps/
+
+# Arduino / simulator outputs
+wokwi-private.toml
+simulator.log
+
+# Editor and OS noise
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~

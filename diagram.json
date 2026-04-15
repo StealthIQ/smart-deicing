@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "author": "smart-deicing",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-arduino-uno",
+      "id": "uno",
+      "top": 0,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-lm35",
+      "id": "temp1",
+      "top": -94,
+      "left": -162,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": -34,
+      "left": 230,
+      "attrs": {
+        "color": "red"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 54,
+      "left": 278,
+      "attrs": {
+        "value": "220"
+      }
+    }
+  ],
+  "connections": [
+    ["uno:5V", "temp1:VCC", "red", []],
+    ["uno:GND.1", "temp1:GND", "black", []],
+    ["uno:A0", "temp1:OUT", "blue", []],
+    ["uno:8", "led1:A", "green", []],
+    ["led1:C", "r1:1", "black", []],
+    ["r1:2", "uno:GND.2", "black", []]
+  ]
+}

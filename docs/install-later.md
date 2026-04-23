@@ -1,6 +1,6 @@
 # Install Later
 
-This session did not install anything. This file lists what to install later when you are ready to run the project on your machine.
+This file lists optional and required setup for environments where tools are not yet installed.
 
 ## Required
 
@@ -8,13 +8,13 @@ This session did not install anything. This file lists what to install later whe
 
 Use Arduino CLI as the main command-line workflow for board core management, sketch compilation, upload, and serial monitoring.
 
-For Arch Linux, install later:
+For Arch Linux:
 
 ```bash
 sudo pacman -S arduino-cli
 ```
 
-After installing Arduino CLI, install the Arduino Uno board core later with:
+After installing Arduino CLI, install the Arduino Uno board core with:
 
 ```bash
 arduino-cli --config-file arduino-cli.yaml core update-index
@@ -27,7 +27,7 @@ arduino-cli --config-file arduino-cli.yaml core install arduino:avr
 
 Use this only if you want the optional PlatformIO build path defined in `platformio.ini`.
 
-For Arch Linux, install later:
+For Arch Linux:
 
 ```bash
 sudo pacman -S platformio-core
